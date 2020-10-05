@@ -6,8 +6,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Executor {
+
+    final LaptopService laptopService;
+
     @Autowired
-    LaptopService laptopService;
+    public Executor(LaptopService laptopService) {
+        this.laptopService = laptopService;
+    }
 
     public void runApplication() {
         laptopService.insertLaptops();
