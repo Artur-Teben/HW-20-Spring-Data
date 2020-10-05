@@ -23,5 +23,6 @@ public class Executor {
 
         System.out.println("\t\t\tUsed laptops");
         laptopService.printAllLaptops(laptopService.findAllLaptopsByUsedIs(true));
+
     }
 }
